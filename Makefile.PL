@@ -25,6 +25,7 @@ WriteMakefile(
         'Carp'                                  => '1.08',
         'File::Basename'                        => '2.76',
         'File::Path'                            => '2.04',
+        'File::Spec'                            => '3.62',
         'FindBin'                               => '1.49',
         'List::Util'                            => '1.19',
 
