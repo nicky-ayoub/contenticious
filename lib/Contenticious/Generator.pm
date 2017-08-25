@@ -1,6 +1,27 @@
 package Contenticious::Generator;
 use Mojo::Base 'Mojolicious::Command';
 
+use FindBin '$Bin';
+use File::Spec::Functions;
+
+has share_directory => "$Bin/../../share";
+
+has directories => [
+    catdir('public'),
+    catdir('pages'),
+];
+
+has files => [
+    catfile(qw(config)),
+    catfile(qw(webapp.pl)),
+    catfile(qw(public styles.css)),
+    catfile(qw(pages index.md)),
+    catfile(qw(pages 01_Perldoc.md)),
+    catfile(qw(pages 02_About.md)),
+];
+
+# TODO weiter
+
 # store everything in files
 sub init {
     my $self = shift;
