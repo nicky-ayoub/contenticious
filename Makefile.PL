@@ -33,6 +33,7 @@ WriteMakefile(
         'Mojolicious'                           => '7.0',
         'Mojolicious::Plugin::Subdispatch'      => '0.04',
         'Mojolicious::Plugin::RelativeUrlFor'   => '0.052',
+        'Mojolicious::Plugin::AssetPack'        => '1.45',
         'Text::Markdown'                        => '1.000031',
     },
     EXE_FILES           => ['contenticious'],
